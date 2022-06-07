@@ -1,0 +1,50 @@
+.container{
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    margin-top: 100px;
+    flex-direction: row;
+}
+.button{
+    height: 50px;
+    width: 150px;
+    background: blue;
+    color: white;
+    border-radius:5px;
+    padding-top: 5px;
+    font-size: 25px;
+}
+.loading{
+    color: blue;
+}
+.container_main{
+    display: flex;
+    flex-direction: column;
+}
+.button_align{
+    display: flex;
+    flex-direction:row;
+    justify-content: space-evenly;
+    margin: 20px 30px;
+}
+.bar_graph{
+    height: 80%;
+    width: 60%;
+}
+@media screen and (max-width:460px) {
+        .container{
+            flex-direction: column;
+            margin-top: 0px;
+        }
+        .button_align{
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-around;
+            height: 200px;
+        }
+        /* .bar_graph{
+            align-items: center;
+            width: 300px;
+            height: 500px;
+        } */
+}
